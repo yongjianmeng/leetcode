@@ -1,7 +1,5 @@
 package com.company.leetcode303;
 
-import com.company.Solution;
-
 public class Main {
 
     public static void main(String[] args) {

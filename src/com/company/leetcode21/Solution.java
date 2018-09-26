@@ -1,5 +1,7 @@
 package com.company.leetcode21;
 
+import com.company.utils.ListNode;
+
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null && l2 == null) {

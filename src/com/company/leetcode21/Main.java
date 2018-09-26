@@ -1,5 +1,7 @@
 package com.company.leetcode21;
 
+import com.company.utils.ListNode;
+
 public class Main {
 
     public static void main(String[] args) {
