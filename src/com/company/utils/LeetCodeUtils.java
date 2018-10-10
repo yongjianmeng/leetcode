@@ -17,7 +17,7 @@ public class LeetCodeUtils {
         for (int i = 0; i < items.size() - 1; i++) {
             System.out.print(items.get(i) + ", ");
         }
-        System.out.print(items.get(items.size() - 1) + "]");
+        System.out.println(items.get(items.size() - 1) + "]");
     }
 
     public static void printListNodes(ListNode head) {
