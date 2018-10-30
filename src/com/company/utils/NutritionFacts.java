@@ -25,21 +25,33 @@ public class NutritionFacts {
         }
 
         public Builder calories(int val) {
+            if (val < 0) {
+                throw new IllegalArgumentException("Calories must be >= 0");
+            }
             calories = val;
             return this;
         }
 
         public Builder fat(int val) {
+            if (val < 0) {
+                throw new IllegalArgumentException("Fat must be >= 0");
+            }
             fat = val;
             return this;
         }
 
         public Builder sodium(int val) {
+            if (val < 0) {
+                throw new IllegalArgumentException("Sodium must be >= 0");
+            }
             sodium = val;
             return this;
         }
 
         public Builder carbohydrate(int val) {
+            if (val < 0) {
+                throw new IllegalArgumentException("Carbohydrate must be >= 0");
+            }
             carbohydrate = val;
             return this;
         }
