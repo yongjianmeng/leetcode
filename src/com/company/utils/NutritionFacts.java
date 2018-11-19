@@ -1,5 +1,7 @@
 package com.company.utils;
 
+import java.util.Objects;
+
 public class NutritionFacts {
     private final int servingSize;
     private final int servings;
@@ -93,6 +95,29 @@ public class NutritionFacts {
 
     public int getCarbohydrate() {
         return carbohydrate;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        NutritionFacts that = (NutritionFacts) o;
+        return servingSize == that.servingSize &&
+                servings == that.servings;
+    }
+
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (!(o instanceof NutritionFacts)) return false;
+//        NutritionFacts that = (NutritionFacts) o;
+//        return servingSize == that.servingSize &&
+//                servings == that.servings;
+//    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(servingSize, servings);
     }
 
     public static void main(String[] args) {
